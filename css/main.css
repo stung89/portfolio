@@ -1,0 +1,245 @@
+body {
+	background: url(https://cdn.dribbble.com/users/28445/screenshots/1130245/attachments/144728/TARDIS_Large-01.png);
+	color: #fff;
+}
+
+header {
+	padding: 20px 10px;
+	background: rgba(159, 161, 133, 0.3);
+	position: fixed;
+	display: inline-block;
+	width: 100%;
+	z-index: 100;
+	height: 40px;
+}
+
+h1 {
+	position: relative;
+}
+
+#logo {
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	background-color: #30395c;
+	display: inline-block;
+}
+
+#nav-top {
+	display: inline-block;
+	float: right;
+	padding-right: 5px;
+}
+
+#nav-top a {
+	display: inline-block;
+	color: #fff;
+	font-family: "Special Elite", "sans-serif";
+	text-decoration: none;
+	padding: 15px 15px;
+	border-radius: 5px;
+}
+
+.nav-up {
+ 	top: -100px; // same as header height. use variables in LESS/SASS
+}
+
+#nav-top a:hover {
+	color: #85a5cc;
+	text-decoration: underline;
+}
+
+.jumbo {
+	border: 1px solid red;
+	height: 100vh;
+}
+
+.jumbo h1 {
+	font-family: "Special Elite", "sans-serif";
+	text-align: center;
+	font-size: 3em;
+	color: #fff;
+	letter-spacing: 4px;
+}
+
+#name {
+	padding-top: 300px;
+}
+
+.content{
+	width: 80%;
+	height: 100vh;
+	margin: 0 auto;
+	background-color: rgba(159, 161, 133, 0.3);
+}
+
+.content p {
+	
+}
+
+.colorChanger {
+	color: rgb(183,211,220);
+}
+
+.namecolor {
+	color: #14189C;
+	text-decoration: line-through;
+}
+
+#project {
+	padding: 60px 100px;
+	text-align: center;
+	background-color: rgba(104, 12, 232, 0.5);
+}
+
+#project .box {
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	margin: 20px;
+	cursor: pointer;
+}
+
+.container {
+	width: 250px;
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+}
+.door-left, .door-right {
+	box-sizing: border-box;
+	position: absolute;
+	background-color: rgba(183,211,220,.97);
+	border: 2px solid rgb(26,94,117);
+	height: 100%;
+	width: 50%;
+	top: 0%;
+	transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-webkit-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3;
+}
+.door-left {
+	padding-top: 20px;
+	left: 0%;
+	
+}
+.door-right {
+	left: 50%;
+}
+.container:hover .door-left{
+	left: -50%;
+}
+.container:hover .door-right{
+	left: 100%;
+}
+
+.box .container h3 {
+	font-size: 1.3em;
+	color: #1A5E75;
+	font-weight: bold;
+	font-family: "Special Elite", "sans-serif";
+	margin: 30 auto;
+	text-align: center;
+}
+
+.box .container h5 {
+	padding-top: 200px;
+	vertical-align: bottom;
+	font-size: 1.3em;
+	color: #1A5E75;
+	font-weight: bold;
+	font-family: "Special Elite", "sans-serif";
+	text-align: center;
+}
+
+.modal-container {
+	display: none;
+	box-sizing: border-box;
+	position: fixed;
+	background:	rgba(0,0,0,0.7);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal-container.active {
+	display: block;
+}
+
+.modal {
+	box-sizing: border-box;
+	margin: 100px auto;
+	width: 500px;
+	height: 600px;
+	padding: 15px;
+}
+
+.modal img {
+	width: 100%;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.content p {
+	letter-spacing: 2px;
+	line-height: 20px;
+}
+
+.social {
+	color: #fff;
+}
+
+footer {
+	background: #333333;
+	width: 100%;
+	overflow: hidden;
+	opacity: 0.90;
+}
+footer p, footer h3 {
+	color: #fff;
+}
+footer p a {
+	color: #fff;
+}
+ul.social li {
+	display: inline;
+}
+ul.social li img {
+	height: 45px;
+	margin-top: 30px;
+}
+footer section {
+	float: left;
+	width: 33.3333%;
+	margin-top: 15px;
+	text-align: center;
+}
+footer.second {
+	border-top: 1 px solid #4d4e50;
+	background-color: #333333;
+	max-height: 50px;
+	text-align: center;
+	opacity: 0.95;
+}
+
+.highlight {
+	background-color: #ec5e6c;
+}
